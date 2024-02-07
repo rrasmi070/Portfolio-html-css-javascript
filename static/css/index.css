@@ -2,6 +2,11 @@
     padding:0;
     margin: 0;
 }
+
+main{
+    background-color: rgba(100, 98, 98, 0.452);
+}
+
 nav{
     position:fixed;
     background-color: rgba(185, 199, 185, 0.164);
@@ -9,12 +14,14 @@ nav{
     width: 100%;
     text-align: center;
 }
+
 a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
     padding: 2rem;
     font-size: medium;
-    font-size: 20px;
+    font-size: 23px;
+    /* font-weight: ; */
 }
 
 .nav-item{
@@ -27,8 +34,8 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;   
-    background-color: rgba(185, 199, 185, 0.479);
+    z-index: -1;
+    background-color: rgb(100, 98, 98);
     opacity: 0.7;
 }
 
@@ -41,10 +48,10 @@ a{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    
 }
+
 .intro p{
-    color: rgb(10, 9, 9);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -52,12 +59,15 @@ a{
     font-family: cursive;
     font-size: 40px;
 }
+
 #intro-text1{
     font-size: 55px;
 }
+
 #intro-text2{
     font-size: 45px;
 }
+
 #whatsap {
     position: fixed;
     bottom: 0;
@@ -79,5 +89,77 @@ a{
     height: 75px;
     border-radius: 50px;
     transform: rotate(-20deg);
-    
+}
+
+.about-content{
+    text-align: center;
+    font-size: larger;
+}
+
+.section-about{
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 15px;
+    margin: 25px solid #36353573;
+    background-color: #64626273;
+}
+
+
+.resume-content{
+    justify-content: center;
+    text-align: center;
+}
+
+
+#education, #experience{
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item-card{
+    min-height: 122px;
+    padding: 20px;
+    width: 540px;
+    background-color: rgb(151 147 147 / 64%);
+    border-radius: 6px;
+    /* text-align: center; */
+    margin: 15px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-direction: column;
+}
+
+#skil-sets {
+    display: flex;
+    flex-wrap: wrap; /* Allow the elements to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
+    padding: 10px 10px 10px 10px;
+}
+
+.skill{
+    /* display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: auto;
+    flex-wrap: wrap; */
+    display: inline-block;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    min-width: 100px;
+    margin: 5px; /* Add some space between skills */
+    text-align: center;
+}
+
+#resume-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }

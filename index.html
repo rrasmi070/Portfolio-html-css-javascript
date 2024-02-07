@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="static\css\index.css">
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-container">
                 <div class="nav-item">
-                    <a href="home">Home</a>
-                    <a href="about">About</a>
-                    <a href="Portfolio">Portfolio</a>
-                    <a href="Resume">Resume</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#blogs">Blogs</a>
+                    <a href="#resume">Resume</a>
                     <a href="Contact">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="main-container">
+        <div class="main-container" id="home">
             <img src="static\images\myBackgroung.png" alt="static\images\myBackgroung.png" class="background-image">
             <div class="intro">
 
@@ -34,9 +41,107 @@
                 <p id="intro-text2">Welcome To My Profile</p>
             </div>
         </div>
+        <div class="section-about" id="about">
+            <h3 class="about-content">About Me</h3>
+            <p class="about-content">
+                Hi there! 👋👋👋👋👋 <br>
+                I'm Rasmiranjan Sahoo, a passionate software developer with a keen interest in cutting-edge
+                technologies and a strong background in Python, machine learning, AI, HTML, and CSS. I thrive on solving
+                complex problems and building innovative solutions that make a meaningful impact.
+            </p><br><br>
+            <h3 class="about-content">Experience</h3>
+            <p class="about-content">
+                Throughout my 2.6 year career, I've had the opportunity to work on diverse projects ranging from
+                developing
+                scalable web applications to building machine learning models for predictive analytics. I've
+                collaborated with cross-functional teams to deliver high-quality software solutions that meet both
+                client requirements and business objectives.
+            </p><br><br>
+            <h3 class="about-content">Let's Connect</h3>
+            <p class="about-content">
+                I'm currently seeking new opportunities to contribute my skills and expertise to exciting projects. If
+                you're interested in collaborating or have a project you'd like to discuss, feel free to reach out! I'm
+                always open to new challenges and eager to make meaningful connections in the tech community.
+            </p>
+        </div>
+
+        <div class="my-resume" id="resume"><br><br>
+            <h1 id="resume-heading">SKILL Sets</h1>
+            <div id="skil-sets">
+                <div class="row">
+                    <p class="skill">Python</p>
+                    <p class="skill">Django</p>
+                    <p class="skill">DRF ( Django Rest Framework )</p>
+                    <p class="skill">FASTAPI</p>
+                    <p class="skill">DOCKER</p>
+                    <p class="skill">Javascript</p>
+                    <p class="skill">Python</p>
+                </div>
+            </div>
+            <br>
+            <h1 id="resume-heading">My Resume</h1>
+            <div class="container resume-content">
+                <div class="row">
+                    <!-- Large and medium devices: 2 columns -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="item" id="education">
+                            Education
+                        </div>
+                        <div class="item item-card">
+                            <span class="card-content">&#x1F4C6; Date</span>
+                            <span class="card-content">BCA (Bachelor of Computer Applications) </span>
+                            <span class="card-content">Arya School of Management & IT </span>
+                            <span class="card-content">Utkal University, Bhubaneswar, Odisha </span>
+                        </div>
+                        <div class="item item-card">
+                            <span class="card-content">&#x1F4C6; Date</span>
+                            <span class="card-content">12th (Science) </span>
+                            <span class="card-content">Banishree Mahavidyay, Kunrpur</span>
+                            <span class="card-content">Council of Higher Secondary Education, Odisha </span>
+                        </div>
+                        <div class="item item-card">
+                            <span class="card-content">&#x1F4C6; Date</span>
+                            <span class="card-content">10th </span>
+                            <span class="card-content">Nua Someswarpur Highchool, Satyabadi, Puri</span>
+                            <span class="card-content">Board of Secondary Education, Odisha </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="item" id="experience">
+                            Experience
+                        </div>
+                        <div class="item item-card">
+                            <span id="mgs">Hello</span>
+
+                            <span class="card-content">&#x1F4C6; Date</span>
+                            <span class="card-content">iBoss Tech Solutions Pvt. Ltd.</span>
+                            <span class="card-content">Registered Office: D-46, FF Complex, Jhandewalan, New Delhi
+                                -110055</span>
+                            <span class="card-content">Corporate Office: D-37, 1st Floor, Sector 63, Noida 201301</span>
+                        </div>
+                        <div class="item item-card">
+                            <span>Hello</span>
+                            <span class="card-content">&#x1F4C6; Date</span>
+                            <span class="card-content">Triazine Software Private Limited</span>
+                            <span class="card-content">Address: B-28 & 29 1st Floor, Sector 58, Noida, Uttar Pradesh
+                                201301</span>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <span id="whatsap">
-        <img src="static/images/chatbot.png" alt="static/images/chatbot.png" class="fa-brands fa-whatsapp" id="whatsap-icon">
+        <img src="static/images/chatbot.png" alt="static/images/chatbot.png" class="fa-brands fa-whatsapp"
+            id="whatsap-icon">
     </span>
 </body>
+
 </html>
