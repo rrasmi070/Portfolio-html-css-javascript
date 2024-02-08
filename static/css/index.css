@@ -56,6 +56,7 @@ a{
 .intro p{
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: -16px;
 }
 
 #intro-text{
@@ -73,15 +74,15 @@ a{
 
 #whatsap {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 15px;
     /* margin: 10px; Adjust the margin for spacing */
 }
 
 #whatsap-icon:hover{
-    /* height: 110px;
-    width: 110px; */
-    animation: scaleAnimation 0.5s ease-in-out infinite; 
+    height: 100px;
+    width: 100px;
+    animation: scaleAnimation 200ms ease-in-out infinite; 
     /* Apply the animation */
 
     transform:none;
@@ -94,6 +95,7 @@ a{
     width: 75px;
     height: 75px;
     border-radius: 50px;
+    animation: scaleAnimation 200ms ease-in-out infinite; 
     /* transform: rotate(-20deg); */
 }
 
@@ -209,9 +211,30 @@ a{
     50% {
       transform: rotate(45deg); /* rotate up to 1.2x */
     }
-    100% {
-      transform: rotate(45deg); /* Scale back to original size */
+    50% {
+      transform: rotate(-45deg); /* Scale back to original size */
     }
   }
-  
-  /* Apply animation to the WhatsApp icon */
+
+.contact-card{
+    height: auto !important;
+    padding: 20px;
+    width: 540px;
+    background-color: rgb(151 147 147 / 64%);
+    border-radius: 6px;
+    /* text-align: center; */
+    margin: 15px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-direction: column;
+}
+
+#name-val{
+    color: red !important;
+}
+
+.contact-social{
+    justify-content: center;
+    /* display:; */
+}
