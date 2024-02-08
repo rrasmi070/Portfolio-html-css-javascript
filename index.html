@@ -79,7 +79,7 @@
                     <p class="skill">FASTAPI</p>
                     <p class="skill">DOCKER</p>
                     <p class="skill">Javascript</p>
-                    <p class="skill">Python</p>
+                    <p class="skill">CSS</p>
                 </div>
             </div>
             <br>
@@ -154,15 +154,16 @@
                         <div class="item" id="education">
                             Get In Touch
                         </div>
-                        <form action="">
+                        <form action="" id="contact-form" onsubmit="sendMessage()">
                             <div class="item item-card">
                                 <input class="contact-form" id="name" type="text" placeholder="Name">
                                 <span id="name-val"></span>
                                 <input class="contact-form" id="email" type="email" placeholder="Email">
                                 <input class="contact-form" id="phone" type="text" placeholder="Phone">
                                 <span id="phone-val"></span>
-                                <input class="contact-form" id="mesage" type="text" placeholder="Message">
-                                <button class="btn submit" onclick="sendMessage()" id="send-message">Sent Your
+                                <span id="message-val"></span>
+                                <input class="contact-form" id="message" type="textb" placeholder="Message">
+                                <button class="btn submit" type="submit" id="send-message">Sent Your
                                     Message</button>
                             </div>
                         </form>
@@ -187,6 +188,9 @@
 
         </div>
     </main>
+    <div class="loader">
+        <!-- <div class="loader-inner"></div> -->
+    </div>
     <span id="whatsap">
         <img src="static/images/chatbot.png" alt="static/images/chatbot.png" class="fa-brands fa-whatsapp"
             id="whatsap-icon">

@@ -190,7 +190,7 @@ a{
     padding: inherit;
 }
 
-#mesage{
+#message{
     height: 200px;;
 }
 
@@ -236,8 +236,36 @@ a{
 #phone-val{
     color: red !important;
 }
+#message-val{
+    color: red !important;
+}
 
 .contact-social{
     justify-content: center;
     /* display:; */
+}
+
+
+
+
+
+
+/* use later */
+.loader {
+    /* display: none; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.1); /* Border color and thickness */
+    border-top-color: #e81111; /* Color of the spinner */
+    animation: spin 1s linear infinite; /* Apply the rotation animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees (full circle) */
+    }
 }
