@@ -233,6 +233,9 @@ a{
 #name-val{
     color: red !important;
 }
+#phone-val{
+    color: red !important;
+}
 
 .contact-social{
     justify-content: center;
