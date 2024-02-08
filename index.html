@@ -21,11 +21,11 @@
         <nav>
             <div class="nav-container">
                 <div class="nav-item">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#blogs">Blogs</a>
-                    <a href="#resume">Resume</a>
-                    <a href="Contact">Contact</a>
+                    <a class="nav-target" href="#home">Home</a>
+                    <a class="nav-target" href="#about">About</a>
+                    <a class="nav-target" href="#blogs">Blogs</a>
+                    <a class="nav-target" href="#resume">Resume</a>
+                    <a class="nav-target" href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -42,6 +42,7 @@
             </div>
         </div>
         <div class="section-about" id="about">
+            <br>
             <h3 class="about-content">About Me</h3>
             <p class="about-content">
                 Hi there! 👋👋👋👋👋 <br>
@@ -96,7 +97,7 @@
                         <div class="item item-card">
                             <span class="card-content">&#x1F4C6; Date</span>
                             <span class="card-content">12th (Science) </span>
-                            <span class="card-content">Banishree Mahavidyay, Kunrpur</span>
+                            <span class="card-content">Banishree Mahavidyaly, Kunrpur</span>
                             <span class="card-content">Council of Higher Secondary Education, Odisha </span>
                         </div>
                         <div class="item item-card">
@@ -111,25 +112,27 @@
                             Experience
                         </div>
                         <div class="item item-card">
-                            <span id="mgs">Hello</span>
-
-                            <span class="card-content">&#x1F4C6; Date</span>
-                            <span class="card-content">iBoss Tech Solutions Pvt. Ltd.</span>
-                            <span class="card-content">Registered Office: D-46, FF Complex, Jhandewalan, New Delhi
+                            <span class="card-content">&#x1F4C6; From: 16th Nov 2023 - Present</span>
+                            <span class="card-content head-name">iBoss Tech Solutions Pvt. Ltd.</span>
+                            <span class="card-content head-address">Registered Office: D-46, FF Complex, Jhandewalan,
+                                New Delhi
                                 -110055</span>
-                            <span class="card-content">Corporate Office: D-37, 1st Floor, Sector 63, Noida 201301</span>
-                        </div>
-                        <div class="item item-card">
-                            <span>Hello</span>
-                            <span class="card-content">&#x1F4C6; Date</span>
-                            <span class="card-content">Triazine Software Private Limited</span>
-                            <span class="card-content">Address: B-28 & 29 1st Floor, Sector 58, Noida, Uttar Pradesh
+                            <span class="card-content head-address">Corporate Office: D-37, 1st Floor, Sector 63, Noida
                                 201301</span>
                             <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                                <li>Item 4</li>
+                                <li>Python Developer Team-AI</li>
+                            </ul>
+                        </div>
+                        <div class="item item-card">
+                            <span class="card-content">&#x1F4C6; From: 23rd Aug 2021 - To: 10th Nov 2023</span>
+                            <span class="card-content head-name">Triazine Software Private Limited</span>
+                            <span class="card-content head-address">Address: B-28 & 29 1st Floor, Sector 58, Noida,
+                                Uttar Pradesh
+                                201301</span>
+                            <ul>
+                                <li>Software Developer Trainee</li>
+                                <li>Software Developer</li>
+                                <li>Software Enginner</li>
                             </ul>
                         </div>
 
@@ -137,11 +140,47 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="container-get-intouch" id="contact">
+            <h1 id="resume-heading">Get In Touch</h1>
+            <br>
+            <div class="container resume-content">
+                <div class="row">
+                    <!-- Large and medium devices: 2 columns -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="item" id="education">
+                            Get In Touch
+                        </div>
+                        <form action="">
+                            <div class="item item-card">
+                                <input class="contact-form" id="name" type="text" placeholder="Name">
+                                <span id="name-val"></span>
+                                <input class="contact-form" id="email" type="email" placeholder="Email">
+                                <input class="contact-form" id="phone" type="text" placeholder="Phone">
+                                <input class="contact-form" id="mesage" type="text" placeholder="Message">
+                                <button class="btn submit" onclick="sendMessage()" id="send-message">Sent Your Message</button>
+                            </div>
+                        </form>
+                        </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="item" id="experience">
+                            My Contact Details
+                        </div>
+                        <div class="item item-card">
+                            <p>Email: text@demo.com</p>
+                            <p>Phone: +91-9876512340</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <span id="whatsap">
         <img src="static/images/chatbot.png" alt="static/images/chatbot.png" class="fa-brands fa-whatsapp"
             id="whatsap-icon">
     </span>
+    <script src="static\js\index.js"></script>
 </body>
 
 </html>

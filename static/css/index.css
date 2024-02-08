@@ -28,6 +28,9 @@ a{
     padding: 1em;
 }
 
+.nav-target:hover{
+    color: rgb(0, 0, 0);
+}
 
 .background-image {
     position: relative;
@@ -76,8 +79,11 @@ a{
 }
 
 #whatsap-icon:hover{
-    height: 110px;
-    width: 110px;
+    /* height: 110px;
+    width: 110px; */
+    animation: scaleAnimation 0.5s ease-in-out infinite; 
+    /* Apply the animation */
+
     transform:none;
 }
 
@@ -88,7 +94,7 @@ a{
     width: 75px;
     height: 75px;
     border-radius: 50px;
-    transform: rotate(-20deg);
+    /* transform: rotate(-20deg); */
 }
 
 .about-content{
@@ -163,3 +169,48 @@ a{
     text-transform: uppercase;
     font-weight: 700;
 }
+
+.head-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.head-address{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact-form{
+    width: 470px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0px solid black;
+    height: 30px;
+    padding: inherit;
+}
+
+#mesage{
+    height: 200px;;
+}
+
+#send-message{
+    color: black;
+    background-color: rgb(186, 216, 52);
+    border: 0.5px solid;
+    font-weight: 400;
+}
+
+/* Keyframe animation for scaling */
+
+@keyframes scaleAnimation {
+    0% {
+      transform: rotate(0); /* Initial scale */
+    }
+    50% {
+      transform: rotate(45deg); /* rotate up to 1.2x */
+    }
+    100% {
+      transform: rotate(45deg); /* Scale back to original size */
+    }
+  }
+  
+  /* Apply animation to the WhatsApp icon */
